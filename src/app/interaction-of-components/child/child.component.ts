@@ -1,11 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss']
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent implements OnInit, OnChanges {
   // 1. Принимаем свойство от родителя и используем в потомке под идентичным именем свойства
   @Input() name: string = "";
   // 1. Принимаем свойство от родителя и используем в потомке под одним именем и переименовываем
@@ -22,7 +22,8 @@ export class ChildComponent implements OnInit {
   }
 
   private _userName: string = '';
-
+  // 3. Принимаем свойство от родителя и используем в потомке под одним именем
+  @Input() age: string = '';
 
   constructor() {
   }
@@ -31,6 +32,10 @@ export class ChildComponent implements OnInit {
     // console.log(this.name); // Artem
     // console.log(this.firstName); // Artem
     // console.log(this._userName) // ivan ivanov
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // console.log(changes) // объект будет сигнализировать о каждом изменение значения в родителе
   }
 
 
