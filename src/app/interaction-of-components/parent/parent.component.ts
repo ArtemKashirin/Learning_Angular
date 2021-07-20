@@ -10,6 +10,7 @@ export class ParentComponent implements OnInit {
 
   public componentInteraction: string = 'https://angular.io/guide/component-interaction';
   public name: string = 'Artem';
+  public fullName: string = '                ivan ivanov                ';
 
   ngOnInit(): void {
   }
