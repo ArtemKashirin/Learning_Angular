@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -16,6 +16,11 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+// 4. Данный метод вызывается по событию из потомка
+  parentUpperCase($event: string) {
+    let city: string = $event.toUpperCase();
+    console.log(city)
 
+  }
 }
 

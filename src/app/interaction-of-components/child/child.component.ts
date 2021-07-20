@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -25,6 +25,10 @@ export class ChildComponent implements OnInit, OnChanges {
   // 3. Принимаем свойство от родителя и используем в потомке под одним именем
   @Input() age: string = '';
 
+  // 4. Экземпляр класса EventEmitter предоставляет методы при помощи которых можно испускать(emit()) события, предварительно передав в них значения или
+  // ничего не передовать, а также в другом месте при помощи метода подписываться(subscribe())
+  @Output() eventEmit: EventEmitter<string> = new EventEmitter();
+public city: string = 'moscow';
   constructor() {
   }
 
@@ -39,6 +43,9 @@ export class ChildComponent implements OnInit, OnChanges {
   }
 
 
+  showLastName() {
+    this.eventEmit.emit(this.city);
+  }
 }
 
 
