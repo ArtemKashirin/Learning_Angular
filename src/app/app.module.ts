@@ -10,6 +10,7 @@ import { ChildComponent } from './interaction-of-components/child/child.componen
 import { ComponentStyleComponent } from './component-style/component-style.component';
 import { ContentParentComponent } from './content-projection/content-parent/content-parent.component';
 import { ContentChildComponent } from './content-projection/content-child/content-child.component';
+import { InterpolationComponent } from './template/interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContentChildComponent } from './content-projection/content-child/conten
     ComponentStyleComponent,
     ContentParentComponent,
     ContentChildComponent,
+    InterpolationComponent,
   ],
   imports: [
     BrowserModule,
