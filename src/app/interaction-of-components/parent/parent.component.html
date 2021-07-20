@@ -36,7 +36,13 @@
     <!--Локальная пременная используется для доступа к свойствам и методам потомка. В селектора потомка объявлена ссылочная переменная по которой
      в родители к селектору кнопки по событию клик возможно вызвать метод потомка showLastName(), который в свою очередь тригерит
      метод родителя-->
-    <button (click)="childe.showLastName()">Click Parent</button>
-    <app-child #childe (eventEmit) = "parentUpperCase($event)"></app-child>
+    <!--<button (click)="childe.showLastName()">Click Parent</button>-->
+    <!--<app-child #childe (eventEmit) = "parentUpperCase($event)"></app-child>-->
+  </li>
+  <li>6. Родитель вызывает потомка при помощи функции с декаратором @ViewChild()
+    <!--Возможно обращаться к свойствам и методам потомка при этом не передавая значение через привязку свойств, локальную переменную или прослушивать событие
+    на ребенке-->
+    <button (click) = "this.valueTransformation()">Changes name</button>
+    <app-child></app-child>
   </li>
 </ul>

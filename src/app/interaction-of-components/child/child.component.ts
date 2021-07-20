@@ -28,7 +28,11 @@ export class ChildComponent implements OnInit, OnChanges {
   // 4. Экземпляр класса EventEmitter предоставляет методы при помощи которых можно испускать(emit()) события, предварительно передав в них значения или
   // ничего не передовать, а также в другом месте при помощи метода подписываться(subscribe())
   @Output() eventEmit: EventEmitter<string> = new EventEmitter();
-public city: string = 'moscow';
+  public city: string = 'moscow';
+
+// 6. Свойство которое будет прочитано в родителе
+  public citizenship: string = 'Russian Federation';
+
   constructor() {
   }
 
