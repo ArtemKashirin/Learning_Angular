@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {InteractionService} from "../../interaction.service";
 
 @Component({
   selector: 'app-child',
@@ -30,7 +31,7 @@ export class ChildComponent implements OnInit, OnChanges {
   @Output() eventEmit: EventEmitter<string> = new EventEmitter();
   public city: string = 'moscow';
 
-// 6. Свойство которое будет прочитано в родителе
+  // 6. Свойство которое будет прочитано в родителе
   public citizenship: string = 'Russian Federation';
 
   constructor() {

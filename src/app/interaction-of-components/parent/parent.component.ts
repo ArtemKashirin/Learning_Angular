@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {ChildComponent} from "../child/child.component";
+import {InteractionService} from "../../interaction.service";
 
 
 @Component({
@@ -17,16 +18,19 @@ export class ParentComponent implements OnInit {
   // 6. Появляется доступ к методам и свойствам ребенка
   @ViewChild(ChildComponent) child: ChildComponent = new ChildComponent();
 
+  // 7. Ижектим сервис и дальше по коду используем
+  constructor(private interaction: InteractionService) {
+  }
+
   ngOnInit(): void {
+    // console.log(this.interaction)// InteractionService
 
   }
 
   //4 - 5. Данный метод вызывается по событию из потомка
   parentUpperCase($event: string) {
     let city: string = $event.toUpperCase();
-    console.log(city)
-
-
+    console.log(city);
   }
 
 // 6. В методе читаем свойство ребенка и изменяем его
