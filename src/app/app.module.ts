@@ -8,6 +8,8 @@ import { EncapsulationStyleComponent } from './encapsulation-style/encapsulation
 import { ParentComponent } from './interaction-of-components/parent/parent.component';
 import { ChildComponent } from './interaction-of-components/child/child.component';
 import { ComponentStyleComponent } from './component-style/component-style.component';
+import { ContentParentComponent } from './content-projection/content-parent/content-parent.component';
+import { ContentChildComponent } from './content-projection/content-child/content-child.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ComponentStyleComponent } from './component-style/component-style.compo
     ParentComponent,
     ChildComponent,
     ComponentStyleComponent,
+    ContentParentComponent,
+    ContentChildComponent,
   ],
   imports: [
     BrowserModule,
