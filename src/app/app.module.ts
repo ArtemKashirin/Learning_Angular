@@ -7,6 +7,7 @@ import {FormsModule} from "@angular/forms";
 import { EncapsulationStyleComponent } from './encapsulation-style/encapsulation-style.component';
 import { ParentComponent } from './interaction-of-components/parent/parent.component';
 import { ChildComponent } from './interaction-of-components/child/child.component';
+import { ComponentStyleComponent } from './component-style/component-style.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ChildComponent } from './interaction-of-components/child/child.componen
     EncapsulationStyleComponent,
     ParentComponent,
     ChildComponent,
+    ComponentStyleComponent,
   ],
   imports: [
     BrowserModule,

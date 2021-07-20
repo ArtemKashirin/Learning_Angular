@@ -1,0 +1,17 @@
+@import "./src/variable";
+
+/*Применится ко всему хосту*/
+:host {
+  text-align: center;
+}
+
+/*Применится к хосту с классом  .blue, а также используем стили из импортированного файла
+*/
+:host .blue {
+  color: $colorText;
+}
+/*Применится к хосту после к контексту с классом .active*/
+:host-context .active {
+  text-decoration: none;
+  text-align: justify;
+}

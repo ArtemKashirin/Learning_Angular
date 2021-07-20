@@ -1,0 +1,4 @@
+/*Вешаем не на селектор а на хост app-component-style для всех селекторов*/
+:host {
+  text-align: justify;
+}
