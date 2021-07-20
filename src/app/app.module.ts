@@ -14,6 +14,7 @@ import { InterpolationComponent } from './template/interpolation/interpolation.c
 import { StatementsComponent } from './template/statements/statements.component';
 import { PipesComponent } from './template/pipes/pipes.component';
 import { BindingComponent } from './template/binding/binding.component';
+import { AttributeBindingComponent } from './template/attribute-binding/attribute-binding.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BindingComponent } from './template/binding/binding.component';
     StatementsComponent,
     PipesComponent,
     BindingComponent,
+    AttributeBindingComponent,
   ],
   imports: [
     BrowserModule,
