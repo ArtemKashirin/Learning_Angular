@@ -14,9 +14,10 @@ export class ParentComponent implements OnInit {
   public age: string = '35';
 
   ngOnInit(): void {
+
   }
 
-// 4. Данный метод вызывается по событию из потомка
+// 4 - 5. Данный метод вызывается по событию из потомка
   parentUpperCase($event: string) {
     let city: string = $event.toUpperCase();
     console.log(city)
