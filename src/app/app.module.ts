@@ -13,6 +13,7 @@ import { ContentChildComponent } from './content-projection/content-child/conten
 import { InterpolationComponent } from './template/interpolation/interpolation.component';
 import { StatementsComponent } from './template/statements/statements.component';
 import { PipesComponent } from './template/pipes/pipes.component';
+import { BindingComponent } from './template/binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PipesComponent } from './template/pipes/pipes.component';
     InterpolationComponent,
     StatementsComponent,
     PipesComponent,
+    BindingComponent,
   ],
   imports: [
     BrowserModule,
