@@ -16,6 +16,7 @@ import { PipesComponent } from './template/pipes/pipes.component';
 import { BindingComponent } from './template/binding/binding.component';
 import { AttributeBindingComponent } from './template/attribute-binding/attribute-binding.component';
 import { EventBindingComponent } from './template/event-binding/event-binding.component';
+import { ReferenceVariablesComponent } from './template/reference-variables/reference-variables.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { EventBindingComponent } from './template/event-binding/event-binding.co
     BindingComponent,
     AttributeBindingComponent,
     EventBindingComponent,
+    ReferenceVariablesComponent,
   ],
   imports: [
     BrowserModule,
