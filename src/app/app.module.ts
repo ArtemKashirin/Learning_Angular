@@ -15,6 +15,7 @@ import { StatementsComponent } from './template/statements/statements.component'
 import { PipesComponent } from './template/pipes/pipes.component';
 import { BindingComponent } from './template/binding/binding.component';
 import { AttributeBindingComponent } from './template/attribute-binding/attribute-binding.component';
+import { EventBindingComponent } from './template/event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AttributeBindingComponent } from './template/attribute-binding/attribut
     PipesComponent,
     BindingComponent,
     AttributeBindingComponent,
+    EventBindingComponent,
   ],
   imports: [
     BrowserModule,
