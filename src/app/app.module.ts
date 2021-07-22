@@ -17,6 +17,8 @@ import { BindingComponent } from './template/binding/binding.component';
 import { AttributeBindingComponent } from './template/attribute-binding/attribute-binding.component';
 import { EventBindingComponent } from './template/event-binding/event-binding.component';
 import { ReferenceVariablesComponent } from './template/reference-variables/reference-variables.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { ChangesColorDirective } from './directives/changes-color.directive';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { ReferenceVariablesComponent } from './template/reference-variables/refe
     AttributeBindingComponent,
     EventBindingComponent,
     ReferenceVariablesComponent,
+    DirectivesComponent,
+    ChangesColorDirective,
   ],
   imports: [
     BrowserModule,
