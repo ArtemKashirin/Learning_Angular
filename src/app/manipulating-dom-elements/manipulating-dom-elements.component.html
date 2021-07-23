@@ -1,0 +1,10 @@
+<p><b><i><a [href] = "this.manipulationElement">Манипуляций с DOM-элементами</a></i></b> - в Angular используются так называемые
+  абстракции, которые представлены классами ElementRef, TemplateRef, ViewRef, ComponentRef и ViewContainerRef. Сами абстракции
+  представляют шаблон компонента или его отдельные части. Для получения доступа к абстракциям используется механизм
+  DOM-запросов, реализованных декораторами @ViewChild() (возвращает одну ссылку) и @ViewChildren() (возвращает массив ссылок). Указанные
+  декораторы используются совместно с шаблонными переменными, являющимися именованными ссылками на шаблон или его части. Именно они
+  служат идентификатором для получения нужного шаблона.</p>
+<!-- <p #htmlRef>Это обычный HTML-элемент</p>-->
+<!--<ng-template #tempRef>Это ng-template типа TemplateRef</ng-template>-->
+<!--<ng-container #containerRef>Это ng-container типа ViewContainerRef</ng-container>-->
+<!--<app-component-style #componentRef></app-component-style>-->

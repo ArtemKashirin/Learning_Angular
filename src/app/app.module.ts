@@ -20,6 +20,7 @@ import { ReferenceVariablesComponent } from './template/reference-variables/refe
 import { DirectivesComponent } from './directives/directives.component';
 import { ChangesColorDirective } from './directives/changes-color.directive';
 import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
+import { ManipulatingDomElementsComponent } from './manipulating-dom-elements/manipulating-dom-elements.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { DependencyInjectionComponent } from './dependency-injection/dependency-
     DirectivesComponent,
     ChangesColorDirective,
     DependencyInjectionComponent,
+    ManipulatingDomElementsComponent,
   ],
   imports: [
     BrowserModule,

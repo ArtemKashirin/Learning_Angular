@@ -11,7 +11,7 @@ export class ChangesColorDirective implements OnInit {
 
   ngOnInit(): void {
     this.elem.nativeElement.style.color = this.appChangesColor;
-    console.log(this.appChangesColor)
+    // console.log(this.appChangesColor) // red
   }
 
 }

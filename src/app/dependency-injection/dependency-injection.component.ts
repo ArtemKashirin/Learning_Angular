@@ -15,7 +15,7 @@ export class DependencyInjectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.interaction.user)
+    // console.log(this.interaction.user) // Объект User
   }
 
 }
