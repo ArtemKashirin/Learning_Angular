@@ -19,6 +19,7 @@ import { EventBindingComponent } from './template/event-binding/event-binding.co
 import { ReferenceVariablesComponent } from './template/reference-variables/reference-variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ChangesColorDirective } from './directives/changes-color.directive';
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ChangesColorDirective } from './directives/changes-color.directive';
     ReferenceVariablesComponent,
     DirectivesComponent,
     ChangesColorDirective,
+    DependencyInjectionComponent,
   ],
   imports: [
     BrowserModule,
