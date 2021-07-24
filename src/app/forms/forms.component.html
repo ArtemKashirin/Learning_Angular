@@ -1,0 +1,30 @@
+<p><b><i><a [href] = "this.forms">Формы</a></i></b> - Angular предоставляет два разных подхода к обработке пользовательского ввода
+  через формы: реактивный и управляемый HTML-шаблонами. Оба фиксируют события ввода пользователя из представления, проверяют ввод
+  пользователя, создают модель формы и модель данных для обновления и предоставляют способ отслеживания изменений.</p>
+<!--Это шаблонные формы, так же можно создавать FormGroup с различными валидатарами -->
+<!--<form>-->
+<!--  <div>-->
+<!--    <label>Логин</label>-->
+<!--    <input type = "text" required [(ngModel)]="loginForm.login"/>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <label>Пароль</label>-->
+<!--    <input type = "password" required [(ngModel)]="loginForm.password"/>-->
+<!--  </div>-->
+
+<!--  <button (click)="showLog()">Войти</button>-->
+<!--</form>-->
+
+<!--Это реактивные формы-->
+<!--<form [formGroup]="this.formGroup">-->
+<!--  <div>-->
+<!--    <label>Логин</label>-->
+<!--    <input type = "text" formControlName="login"/>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <label>Пароль</label>-->
+<!--    <input type = "password" formControlName="password"/>-->
+<!--  </div>-->
+
+<!--  <button (click)="showLog()">Войти</button>-->
+<!--</form>-->
